@@ -1,0 +1,50 @@
+
+.myStyle{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container1{
+    display: grid;
+    width: 70vw; 
+    height: auto;
+    background: black;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 13vh 5vh 10vh 10vh ;
+    grid-template-areas: 
+        'google'
+        'searchbar'
+        'buttons'
+        'offeredbygoogle' ;
+}
+
+#google-logo{
+    height: auto;
+    width: 17vw;
+    display: flex;
+    justify-content: center;
+    grid-area: google;
+}
+#searchbar{
+    height: 5vh;
+    width: 63vw; 
+    position: absolute;
+    margin-left:3.5vw; 
+    border-color: transparent;
+}
+#searchbar-solid{
+    height: 5vh;
+    width: 70vw;
+    background:white; 
+    position:absolute;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    /*has no border but dropshadow*/
+}
