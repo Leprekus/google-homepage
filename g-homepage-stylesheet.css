@@ -3,6 +3,23 @@
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+.header{
+    top: 0;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    display: inline-flex;
+    justify-content: end;
+    
+}
+.header-wrap{
+   display: flex;
+   flex-direction: row;
+   margin-right: 2%;
+   align-items: center;
+   gap: 5%;
+
+}
 .center{
     display: flex;
     justify-content: center;
@@ -33,7 +50,61 @@
 
 
 }
-
+.footer{
+    
+    background-color: #f2f2f2;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 16vh;
+    color: #686868;
+    
+ }
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    position: relative;
+    width: 100%;
+    
+}
+.left-container{
+    display: flex;
+    flex-direction: row;
+    min-width: 50vw;
+    column-gap: 5vw;
+    margin-left: 20vw;
+}
+.right-container{
+    
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    margin-right: 20%;
+}
+#apps-icon{
+    height:3vh;
+    width: auto;
+}
+#circle{
+    height: 5vh;
+    width: 7vw;
+    border-radius: 50%;
+    background:transparent;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+#login{
+    width: 20vw;
+    height: 5vh;
+    background: rgb(26, 115, 232);
+    color: white;
+    font-size: 75%;
+}
 #google-logo{
     height: 20vh;
     width: auto;
@@ -84,6 +155,14 @@
 
 }
 
+#border{
+    border-style: solid;
+    border-color: #C0C0C0;
+    border-width: .5px;
+}
+#mexico{
+    margin-left: 4%;
+}
 button{
     border-style: solid;
     border-radius: 5px;
@@ -93,11 +172,10 @@ button{
     background: #F5F5F5;
 }
 
-.footer{
-   height: 100vh;
-   width: auto;
-   color: gray;
-}
+
+#circle:hover{
+    background: rgba(60,64,67,0.08);
+} 
 
 button:hover{
     filter: drop-shadow(0px 0px 1px #888888);
