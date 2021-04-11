@@ -9,10 +9,12 @@
     align-items: center;
 }
 .container1{
+    
     display: grid;
     width: 70vw; 
     height: auto;
-    background: black;
+    margin-top: 20vh;
+    background: tra;
     align-items: center;
     justify-content: center;
     grid-template-rows: 13vh 5vh 10vh 10vh ;
@@ -20,31 +22,88 @@
         'google'
         'searchbar'
         'buttons'
-        'offeredbygoogle' ;
+}
+
+.buttons{
+    height: 6vh;
+    width: 24vw ;
+    display: inline-flex;
+    gap: 2vw;
+    margin-top: 20vh;
+
+
 }
 
 #google-logo{
-    height: auto;
-    width: 17vw;
+    height: 20vh;
+    width: auto;
     display: flex;
     justify-content: center;
     grid-area: google;
 }
 #searchbar{
     height: 5vh;
-    width: 63vw; 
+    width: 58vw; 
     position: absolute;
+
+    margin-bottom: 3vh;
     margin-left:3.5vw; 
     border-color: transparent;
 }
 #searchbar-solid{
-    height: 5vh;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 65vw;
+    margin-bottom: 3vh;
+
+    height: 7vh;
     width: 70vw;
+
     background:white; 
     position:absolute;
-    border-color: gray;
+    border-color: 	#E0E0E0;
     border-style: solid;
     border-width: 1px;
-    border-radius: 20px;
+    border-radius: 30px;
     /*has no border but dropshadow*/
+}
+
+#mag-glass{
+    width: auto;
+    height: 2vh;   
+}
+#microphone{
+    width: auto;
+    height: 3vh;   
+}
+#g-search{
+
+}
+#feeling-lucky{
+
+}
+
+button{
+    border-style: solid;
+    border-radius: 5px;
+    border-color: transparent;
+
+    font-size: 1.2vw;
+    background: #F5F5F5;
+}
+
+.footer{
+   height: 100vh;
+   width: auto;
+   color: gray;
+}
+
+button:hover{
+    filter: drop-shadow(0px 0px 1px #888888);
+}
+
+#searchbar-solid:hover{
+    /*filter: drop-shadow(0px 0px .5px #888888);*/
+    box-shadow: 0 0 7px #DCDCDC;
 }
